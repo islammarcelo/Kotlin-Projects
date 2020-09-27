@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etShowNumber"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:ems="10"
+        android:textColorHint="#fff"
+        android:textSize="40dp"
+        android:gravity="right"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:background="@color/colorBackground"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="cleanEvent"
+                android:text="AC" />
+
+            <Button
+                android:id="@+id/btnPulsMinus"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="+/-" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="percentEvent"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="@color/colorButton"
+                android:onClick="opEvent"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnMul"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="@color/colorButton"
+                android:onClick="opEvent"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btnMins"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="@color/colorButton"
+                android:onClick="opEvent"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="@color/colorButton"
+                android:onClick="opEvent"
+                android:text="+" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="85pt"
+                android:layout_height="20pt"
+                android:layout_weight="2"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btnDott"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btnNumberEvent"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btnEqual"
+                android:layout_width="42pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:background="@color/colorButton"
+                android:onClick="equalEvent"
+                android:text="=" />
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>

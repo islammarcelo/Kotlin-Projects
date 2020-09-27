@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:padding="5pt">
+
+    <LinearLayout
+        android:background="@drawable/kiiler_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/animal_image"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            app:srcCompat="@drawable/baboon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="2pt">
+
+            <TextView
+                android:id="@+id/animal_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Babon"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/animal-description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Babon lives in zoo with different animals"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
